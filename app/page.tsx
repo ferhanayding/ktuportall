@@ -40,106 +40,240 @@ export default function KTUPortal() {
     tuitionStatus: "Harç ödemeniz gerekmemektedir.",
   };
   const transcriptData = [
-  {
-    year: "1. Sınıf",
-    terms: [
-      {
-        name: "Güz Dönemi",
-        average: 2.35,
-        gno: 2.35,
-        courses: [
-          { code: "IMB1001", name: "İç Mimarlıkta Teknik Resim - I", credit: 4, grade: "CC" },
-          { code: "IMB1003", name: "Temel Sanat Eğitimi", credit: 8, grade: "BB" },
-          { code: "IMB1005", name: "İç Mimarlığa Giriş", credit: 3, grade: "CB" },
-          { code: "IMB1007", name: "Tasarıma Giriş ve İç Mimari Proje - I", credit: 6, grade: "DC" },
-          { code: "TDB1001", name: "Türk Dili - I", credit: 2, grade: "AA" },
-          { code: "YDB1003", name: "İngilizce - I", credit: 2, grade: "FF" },
-        ],
-      },
-      {
-        name: "Bahar Dönemi",
-        average: 2.05,
-        gno: 2.22,
-        courses: [
-          { code: "IMB1002", name: "İç Mimarlıkta Teknik Resim - II", credit: 4, grade: "CB" },
-          { code: "IMB1004", name: "İç Mimari Proje - II", credit: 6, grade: "CC" },
-          { code: "IMB1006", name: "Mimarlık ve Sanat Tarihi", credit: 3, grade: "BB" },
-          { code: "IMB1008", name: "Yapı Bilgisi", credit: 3, grade: "DD" },
-          { code: "TDB1000", name: "Türk Dili - II", credit: 2, grade: "AA" },
-          { code: "YDB1004", name: "İngilizce - II", credit: 2, grade: "BA" },
-        ],
-      },
-    ],
-  },
-  {
-    year: "2. Sınıf",
-    terms: [
-      {
-        name: "Güz Dönemi",
-        average: 2.75,
-        gno: 2.45,
-        courses: [
-          { code: "IMB2013", name: "İç Mimari Proje - III", credit: 6, grade: "BB" },
-          { code: "IMB2017", name: "Malzeme Bilgisi - I", credit: 3, grade: "BA" },
-          { code: "IMB2025", name: "Bilgisayar Destekli Tasarım - I", credit: 4, grade: "BA" },
-          { code: "IMB2029", name: "Taşıyıcı Sistemler", credit: 2, grade: "CC" },
-          { code: "IMB2031", name: "İç Mekanda Yüzey Anlatımı", credit: 3, grade: "BB" },
-          { code: "IMB2033", name: "Meslek Etiği", credit: 2, grade: "AA" },
-          { code: "IMB2035", name: "İnsan Mekan İlişkisi", credit: 2, grade: "BA" },
-          { code: "IMB2037", name: "Yaratıcı Düşünme", credit: 2, grade: "AA" },
-        ],
-      },
-      {
-        name: "Bahar Dönemi",
-        average: 2.55,
-        gno: 2.51,
-        courses: [
-          { code: "IMB2002", name: "İç Mimari Proje - IV", credit: 6, grade: "BA" },
-          { code: "IMB2004", name: "Bilgisayar Destekli Tasarım - II", credit: 4, grade: "BB" },
-          { code: "IMB2014", name: "Estetik", credit: 2, grade: "AA" },
-          { code: "IMB2020", name: "Detay Bilgisi", credit: 3, grade: "BA" },
-          { code: "IMB2022", name: "Malzeme Bilgisi - II", credit: 3, grade: "BB" },
-          { code: "IMB2024", name: "Meslek Etiği", credit: 2, grade: "AA" },
-          { code: "IMB2026", name: "İnsan Mekan İlişkisi", credit: 2, grade: "BA" },
-          { code: "IMB2028", name: "Yaratıcı Düşünme", credit: 2, grade: "AA" },
-        ],
-      },
-    ],
-  },
-  {
-    year: "3. Sınıf",
-    terms: [
-      {
-        name: "Güz Dönemi",
-        average: 1.45,
-        gno: 2.05,
-        courses: [
-          { code: "IMB3011", name: "Oda Akustiği", credit: 3, grade: "FF" },
-          { code: "IMB3013", name: "İç Mimari Proje - V", credit: 6, grade: "DD" },
-          { code: "IMB3019", name: "Mobilya Tarihi", credit: 4, grade: "CC" },
-          { code: "IMB3023", name: "Isıtma Havalandırma ve Tesisat", credit: 3, grade: "FF" },
-          { code: "IMB3025", name: "Mimari Simülasyon - I", credit: 3, grade: "DD" },
-          { code: "IMB3027", name: "Vitrin Tasarımı", credit: 2, grade: "FF" },
-        ],
-      },
-      {
-        name: "Bahar Dönemi",
-        average: 1.35,
-        gno: 1.90,
-        courses: [
-          { code: "IMB3031", name: "Aydınlatma", credit: 4, grade: "FF" },
-          { code: "IMB3033", name: "Röleve", credit: 6, grade: "DC" },
-          { code: "IMB3035", name: "Mobilya Tasarımı", credit: 4, grade: "FF" },
-          { code: "IMB3037", name: "İç Mimari Proje - VI", credit: 6, grade: "DD" },
-          { code: "IMB3039", name: "İç Mekan Tasarımında Sürdürülebilir Malzemeler", credit: 3, grade: "FF" },
-          { code: "IMB3041", name: "Mimari Simülasyon - II", credit: 3, grade: "FF" },
-          { code: "IMB3043", name: "Sahne Tasarımı", credit: 2, grade: "FF" },
-        ],
-      },
-    ],
-  },
-];
-
+    {
+      year: "1. Sınıf",
+      terms: [
+        {
+          name: "Güz Dönemi",
+          average: 2.35,
+          gno: 2.35,
+          courses: [
+            {
+              code: "IMB1001",
+              name: "İç Mimarlıkta Teknik Resim - I",
+              credit: 4,
+              grade: "CC",
+            },
+            {
+              code: "IMB1003",
+              name: "Temel Sanat Eğitimi",
+              credit: 8,
+              grade: "BB",
+            },
+            {
+              code: "IMB1005",
+              name: "İç Mimarlığa Giriş",
+              credit: 3,
+              grade: "CB",
+            },
+            {
+              code: "IMB1007",
+              name: "Tasarıma Giriş ve İç Mimari Proje - I",
+              credit: 6,
+              grade: "DC",
+            },
+            { code: "TDB1001", name: "Türk Dili - I", credit: 2, grade: "AA" },
+            { code: "YDB1003", name: "İngilizce - I", credit: 2, grade: "FF" },
+          ],
+        },
+        {
+          name: "Bahar Dönemi",
+          average: 2.05,
+          gno: 2.22,
+          courses: [
+            {
+              code: "IMB1002",
+              name: "İç Mimarlıkta Teknik Resim - II",
+              credit: 4,
+              grade: "CB",
+            },
+            {
+              code: "IMB1004",
+              name: "İç Mimari Proje - II",
+              credit: 6,
+              grade: "CC",
+            },
+            {
+              code: "IMB1006",
+              name: "Mimarlık ve Sanat Tarihi",
+              credit: 3,
+              grade: "BB",
+            },
+            { code: "IMB1008", name: "Yapı Bilgisi", credit: 3, grade: "DD" },
+            { code: "TDB1000", name: "Türk Dili - II", credit: 2, grade: "AA" },
+            { code: "YDB1004", name: "İngilizce - II", credit: 2, grade: "BA" },
+          ],
+        },
+      ],
+    },
+    {
+      year: "2. Sınıf",
+      terms: [
+        {
+          name: "Güz Dönemi",
+          average: 2.75,
+          gno: 2.45,
+          courses: [
+            {
+              code: "IMB2013",
+              name: "İç Mimari Proje - III",
+              credit: 6,
+              grade: "BB",
+            },
+            {
+              code: "IMB2017",
+              name: "Malzeme Bilgisi - I",
+              credit: 3,
+              grade: "BA",
+            },
+            {
+              code: "IMB2025",
+              name: "Bilgisayar Destekli Tasarım - I",
+              credit: 4,
+              grade: "BA",
+            },
+            {
+              code: "IMB2029",
+              name: "Taşıyıcı Sistemler",
+              credit: 2,
+              grade: "CC",
+            },
+            {
+              code: "IMB2031",
+              name: "İç Mekanda Yüzey Anlatımı",
+              credit: 3,
+              grade: "BB",
+            },
+            { code: "IMB2033", name: "Meslek Etiği", credit: 2, grade: "AA" },
+            {
+              code: "IMB2035",
+              name: "İnsan Mekan İlişkisi",
+              credit: 2,
+              grade: "BA",
+            },
+            {
+              code: "IMB2037",
+              name: "Yaratıcı Düşünme",
+              credit: 2,
+              grade: "AA",
+            },
+          ],
+        },
+        {
+          name: "Bahar Dönemi",
+          average: 2.55,
+          gno: 2.51,
+          courses: [
+            {
+              code: "IMB2002",
+              name: "İç Mimari Proje - IV",
+              credit: 6,
+              grade: "BA",
+            },
+            {
+              code: "IMB2004",
+              name: "Bilgisayar Destekli Tasarım - II",
+              credit: 4,
+              grade: "BB",
+            },
+            { code: "IMB2014", name: "Estetik", credit: 2, grade: "AA" },
+            { code: "IMB2020", name: "Detay Bilgisi", credit: 3, grade: "BA" },
+            {
+              code: "IMB2022",
+              name: "Malzeme Bilgisi - II",
+              credit: 3,
+              grade: "BB",
+            },
+            { code: "IMB2024", name: "Meslek Etiği", credit: 2, grade: "AA" },
+            {
+              code: "IMB2026",
+              name: "İnsan Mekan İlişkisi",
+              credit: 2,
+              grade: "BA",
+            },
+            {
+              code: "IMB2028",
+              name: "Yaratıcı Düşünme",
+              credit: 2,
+              grade: "AA",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      year: "3. Sınıf",
+      terms: [
+        {
+          name: "Güz Dönemi",
+          average: 1.45,
+          gno: 2.05,
+          courses: [
+            { code: "IMB3011", name: "Oda Akustiği", credit: 3, grade: "FF" },
+            {
+              code: "IMB3013",
+              name: "İç Mimari Proje - V",
+              credit: 6,
+              grade: "DD",
+            },
+            { code: "IMB3019", name: "Mobilya Tarihi", credit: 4, grade: "CC" },
+            {
+              code: "IMB3023",
+              name: "Isıtma Havalandırma ve Tesisat",
+              credit: 3,
+              grade: "FF",
+            },
+            {
+              code: "IMB3025",
+              name: "Mimari Simülasyon - I",
+              credit: 3,
+              grade: "DD",
+            },
+            {
+              code: "IMB3027",
+              name: "Vitrin Tasarımı",
+              credit: 2,
+              grade: "FF",
+            },
+          ],
+        },
+        {
+          name: "Bahar Dönemi",
+          average: 1.35,
+          gno: 1.9,
+          courses: [
+            { code: "IMB3031", name: "Aydınlatma", credit: 4, grade: "FF" },
+            { code: "IMB3033", name: "Röleve", credit: 6, grade: "DC" },
+            {
+              code: "IMB3035",
+              name: "Mobilya Tasarımı",
+              credit: 4,
+              grade: "FF",
+            },
+            {
+              code: "IMB3037",
+              name: "İç Mimari Proje - VI",
+              credit: 6,
+              grade: "DD",
+            },
+            {
+              code: "IMB3039",
+              name: "İç Mekan Tasarımında Sürdürülebilir Malzemeler",
+              credit: 3,
+              grade: "FF",
+            },
+            {
+              code: "IMB3041",
+              name: "Mimari Simülasyon - II",
+              credit: 3,
+              grade: "FF",
+            },
+            { code: "IMB3043", name: "Sahne Tasarımı", credit: 2, grade: "FF" },
+          ],
+        },
+      ],
+    },
+  ];
 
   const courses = [
     {
@@ -228,7 +362,7 @@ export default function KTUPortal() {
 
   if (!isLoggedIn) {
     return (
-      <div className="min-h-screen bg-gradient-to-br text-gray-900 from-[#004466] to-[#003355] flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-br text-black from-[#004466] to-[#003355] flex items-center justify-center p-4">
         <div className="w-full max-w-md">
           <div className="bg-white rounded-3xl p-6 md:p-8 shadow-lg">
             {/* 🔸 KTÜ Logosu */}
@@ -238,7 +372,7 @@ export default function KTUPortal() {
                 alt="KTÜ Logo"
                 className="w-20 h-20 mb-3 object-contain"
               />
-              <h1 className="text-2xl font-bold text-[#004466]">KTÜ</h1>
+              <h1 className="text-2xl font-bold text-[#000304]">KTÜ</h1>
               <p className="text-sm text-gray-600">
                 KARADENİZ TEKNİK ÜNİVERSİTESİ
               </p>
@@ -358,7 +492,7 @@ export default function KTUPortal() {
                 className={`w-full text-left px-4 py-3 rounded-lg flex items-center gap-3 transition-colors ${
                   activeMenu === item.id
                     ? "bg-[#004466] text-white"
-                    : "hover:bg-gray-100"
+                    : "hover:bg-gray-100 text-black "
                 }`}
               >
                 <Icon size={20} />
@@ -382,19 +516,19 @@ export default function KTUPortal() {
                   className="w-28 h-36 object-cover border rounded"
                 />
                 <div>
-                  <h1 className="text-2xl font-bold text-[#004466]">
+                  <h1 className="text-2xl font-bold text-[#000304]">
                     Ahsen Nazlı Uydur
                   </h1>
-                  <p className="text-sm text-gray-900">Öğrenci No: 427905</p>
-                  <p className="text-sm text-gray-900">
+                  <p className="text-sm text-black">Öğrenci No: 427905</p>
+                  <p className="text-sm text-black">
                     İç Mimarlık Bölümü (I. Öğretim)
                   </p>
-                  <p className="text-sm text-gray-900">Mimarlık Fakültesi</p>
-                  <p className="text-sm text-gray-900">Durum: Aktif Öğrenci</p>
+                  <p className="text-sm text-black">Mimarlık Fakültesi</p>
+                  <p className="text-sm text-black">Durum: Aktif Öğrenci</p>
                 </div>
               </div>
 
-              <h2 className="text-xl md:text-2xl font-bold text-[#004466] mb-4">
+              <h2 className="text-xl md:text-2xl font-bold text-[#000304] mb-4">
                 Ana Sayfa
               </h2>
 
@@ -440,7 +574,7 @@ export default function KTUPortal() {
 
           {activeMenu === "bilgiler" && (
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#004466] mb-4">
+              <h2 className="text-xl md:text-2xl font-bold text-[#000304] mb-4">
                 Öğrenci Bilgileri
               </h2>
               <div className="space-y-3">
@@ -461,7 +595,7 @@ export default function KTUPortal() {
 
           {activeMenu === "dersler" && (
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#004466] mb-4">
+              <h2 className="text-xl md:text-2xl font-bold text-[#000304] mb-4">
                 Ders Programı
               </h2>
               <div className="space-y-3">
@@ -483,7 +617,7 @@ export default function KTUPortal() {
 
           {activeMenu === "transkript" && (
             <div className="p-2">
-              <h2 className="text-2xl font-bold text-[#004466] mb-4">
+              <h2 className="text-2xl font-bold text-[#000304] mb-4">
                 Transkript
               </h2>
               {transcriptData.map((year) => (
@@ -491,11 +625,11 @@ export default function KTUPortal() {
                   <h3 className="text-xl font-semibold mb-2">{year.year}</h3>
                   {year.terms.map((term) => (
                     <div key={term.name} className="mb-6">
-                      <h4 className="font-semibold text-[#004466] mb-2">
+                      <h4 className="font-semibold text-black mb-2">
                         {term.name}
                       </h4>
                       <table className="w-full text-sm border">
-                        <thead className="bg-gray-100">
+                        <thead className="bg-gray-400">
                           <tr>
                             <th className="border px-2 py-1 text-left">Kod</th>
                             <th className="border px-2 py-1 text-left">
@@ -541,14 +675,14 @@ export default function KTUPortal() {
 
               <div className="text-right mt-8 font-semibold text-lg">
                 🎓 Genel Not Ortalaması (GNO):{" "}
-                <span className="text-[#004466]">1.91</span>
+                <span className="text-[#000304]">1.91</span>
               </div>
             </div>
           )}
 
           {activeMenu === "vize" && (
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#004466] mb-4">
+              <h2 className="text-xl md:text-2xl font-bold text-[#000304] mb-4">
                 Vize Sonuçları
               </h2>
               <div className="space-y-3">
@@ -559,7 +693,7 @@ export default function KTUPortal() {
 
           {activeMenu === "final" && (
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#004466] mb-4">
+              <h2 className="text-xl md:text-2xl font-bold text-[#000304] mb-4">
                 Final Sonuçları
               </h2>
               <div className="space-y-3">
@@ -570,7 +704,7 @@ export default function KTUPortal() {
 
           {activeMenu === "danismanlik" && (
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#004466] mb-4">
+              <h2 className="text-xl md:text-2xl font-bold text-[#000304] mb-4">
                 Danışmanlık
               </h2>
               <div className="bg-blue-50 p-4 rounded-lg space-y-2">
@@ -588,7 +722,7 @@ export default function KTUPortal() {
 
           {activeMenu === "odemeler" && (
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#004466] mb-4">
+              <h2 className="text-xl md:text-2xl font-bold text-[#000304] mb-4">
                 Ödemeler
               </h2>
               Aktif ödeme bulunmamaktadır.
@@ -597,7 +731,7 @@ export default function KTUPortal() {
 
           {activeMenu === "dilekce" && (
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#004466] mb-4">
+              <h2 className="text-xl md:text-2xl font-bold text-[#000304] mb-4">
                 Dilekçelerim
               </h2>
 
@@ -624,14 +758,14 @@ export default function KTUPortal() {
 
           {activeMenu === "duyurular" && (
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#004466] mb-4">
+              <h2 className="text-xl md:text-2xl font-bold text-[#000304] mb-4">
                 Duyurular
               </h2>
               <div className="space-y-3">
                 {notifications.map((n, i) => (
                   <div key={i} className="border rounded-lg p-3">
                     <h3 className="font-bold text-sm mb-1">{n.title}</h3>
-                    <p className="text-xs text-gray-900 mb-2">{n.message}</p>
+                    <p className="text-xs text-black mb-2">{n.message}</p>
                     <p className="text-xs text-gray-500">{n.date}</p>
                   </div>
                 ))}
