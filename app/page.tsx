@@ -40,240 +40,106 @@ export default function KTUPortal() {
     tuitionStatus: "Harç ödemeniz gerekmemektedir.",
   };
   const transcriptData = [
-    {
-      year: "1. Sınıf",
-      terms: [
-        {
-          name: "Güz Dönemi",
-          average: 2.45,
-          gno: 2.45,
-          courses: [
-            {
-              code: "IMB1001",
-              name: "İç Mimarlıkta Teknik Resim - I",
-              credit: 4,
-              grade: "CC",
-            },
-            {
-              code: "IMB1003",
-              name: "Temel Sanat Eğitimi",
-              credit: 8,
-              grade: "BA",
-            },
-            {
-              code: "IMB1005",
-              name: "İç Mimarlığa Giriş",
-              credit: 3,
-              grade: "CB",
-            },
-            {
-              code: "IMB1007",
-              name: "Tasarıma Giriş ve İç Mimari Proje - I",
-              credit: 6,
-              grade: "BB",
-            },
-            { code: "TDB1001", name: "Türk Dili - I", credit: 2, grade: "AA" },
-            { code: "YDB1003", name: "İngilizce - I", credit: 2, grade: "BA" },
-          ],
-        },
-        {
-          name: "Bahar Dönemi",
-          average: 2.1,
-          gno: 2.28,
-          courses: [
-            {
-              code: "IMB1002",
-              name: "İç Mimarlıkta Teknik Resim - II",
-              credit: 4,
-              grade: "CB",
-            },
-            {
-              code: "IMB1004",
-              name: "İç Mimari Proje - II",
-              credit: 6,
-              grade: "CC",
-            },
-            {
-              code: "IMB1006",
-              name: "Mimarlık ve Sanat Tarihi",
-              credit: 3,
-              grade: "BB",
-            },
-            { code: "IMB1008", name: "Yapı Bilgisi", credit: 3, grade: "DC" },
-            { code: "TDB1000", name: "Türk Dili - II", credit: 2, grade: "AA" },
-            { code: "YDB1004", name: "İngilizce - II", credit: 2, grade: "BA" },
-          ],
-        },
-      ],
-    },
-    {
-      year: "2. Sınıf",
-      terms: [
-        {
-          name: "Güz Dönemi",
-          average: 1.95,
-          gno: 2.16,
-          courses: [
-            {
-              code: "IMB2013",
-              name: "İç Mimari Proje - III",
-              credit: 6,
-              grade: "CC",
-            },
-            {
-              code: "IMB2017",
-              name: "Malzeme Bilgisi - I",
-              credit: 3,
-              grade: "DC",
-            },
-            {
-              code: "IMB2025",
-              name: "Bilgisayar Destekli Tasarım - I",
-              credit: 4,
-              grade: "CB",
-            },
-            {
-              code: "IMB2029",
-              name: "Taşıyıcı Sistemler",
-              credit: 2,
-              grade: "DD",
-            },
-            {
-              code: "IMB2031",
-              name: "İç Mekanda Yüzey Anlatımı",
-              credit: 3,
-              grade: "CC",
-            },
-            { code: "IMB2033", name: "Meslek Etiği", credit: 2, grade: "BB" },
-            {
-              code: "IMB2035",
-              name: "İnsan Mekan İlişkisi",
-              credit: 2,
-              grade: "CB",
-            },
-            {
-              code: "IMB2037",
-              name: "Yaratıcı Düşünme",
-              credit: 2,
-              grade: "BA",
-            },
-          ],
-        },
-        {
-          name: "Bahar Dönemi",
-          average: 1.75,
-          gno: 2.02,
-          courses: [
-            {
-              code: "IMB2002",
-              name: "İç Mimari Proje - IV",
-              credit: 6,
-              grade: "DC",
-            },
-            {
-              code: "IMB2004",
-              name: "Bilgisayar Destekli Tasarım - II",
-              credit: 4,
-              grade: "CC",
-            },
-            { code: "IMB2014", name: "Estetik", credit: 2, grade: "BA" },
-            { code: "IMB2020", name: "Detay Bilgisi", credit: 3, grade: "DD" },
-            {
-              code: "IMB2022",
-              name: "Malzeme Bilgisi - II",
-              credit: 3,
-              grade: "CC",
-            },
-            { code: "IMB2024", name: "Meslek Etiği", credit: 2, grade: "BB" },
-            {
-              code: "IMB2026",
-              name: "İnsan Mekan İlişkisi",
-              credit: 2,
-              grade: "CC",
-            },
-            {
-              code: "IMB2028",
-              name: "Yaratıcı Düşünme",
-              credit: 2,
-              grade: "BA",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      year: "3. Sınıf",
-      terms: [
-        {
-          name: "Güz Dönemi",
-          average: 1.6,
-          gno: 1.9,
-          courses: [
-            { code: "IMB3011", name: "Oda Akustiği", credit: 3, grade: "DD" },
-            {
-              code: "IMB3013",
-              name: "İç Mimari Proje - V",
-              credit: 6,
-              grade: "CC",
-            },
-            { code: "IMB3019", name: "Mobilya Tarihi", credit: 4, grade: "CB" },
-            {
-              code: "IMB3023",
-              name: "Isıtma Havalandırma ve Tesisat",
-              credit: 3,
-              grade: "DD",
-            },
-            {
-              code: "IMB3025",
-              name: "Mimari Simülasyon - I",
-              credit: 3,
-              grade: "CB",
-            },
-            {
-              code: "IMB3027",
-              name: "Vitrin Tasarımı",
-              credit: 2,
-              grade: "BA",
-            },
-          ],
-        },
-        {
-          name: "Bahar Dönemi",
-          average: 1.55,
-          gno: 1.91,
-          courses: [
-            { code: "IMB3031", name: "Aydınlatma", credit: 4, grade: "CC" },
-            { code: "IMB3033", name: "Röleve", credit: 6, grade: "DC" },
-            {
-              code: "IMB3035",
-              name: "Mobilya Tasarımı",
-              credit: 4,
-              grade: "CB",
-            },
-            {
-              code: "IMB3037",
-              name: "İç Mimari Proje - VI",
-              credit: 6,
-              grade: "CC",
-            },
-            {
-              code: "IMB3039",
-              name: "İç Mekan Tasarımında Sürdürülebilir Malzemeler",
-              credit: 3,
-              grade: "DD",
-            },
-            {
-              code: "IMB3041",
-              name: "Mimari Simülasyon - II",
-              credit: 3,
-              grade: "CC",
-            },
-            { code: "IMB3043", name: "Sahne Tasarımı", credit: 2, grade: "BB" },
-          ],
-        },
-      ],
-    },
-  ];
+  {
+    year: "1. Sınıf",
+    terms: [
+      {
+        name: "Güz Dönemi",
+        average: 2.35,
+        gno: 2.35,
+        courses: [
+          { code: "IMB1001", name: "İç Mimarlıkta Teknik Resim - I", credit: 4, grade: "CC" },
+          { code: "IMB1003", name: "Temel Sanat Eğitimi", credit: 8, grade: "BB" },
+          { code: "IMB1005", name: "İç Mimarlığa Giriş", credit: 3, grade: "CB" },
+          { code: "IMB1007", name: "Tasarıma Giriş ve İç Mimari Proje - I", credit: 6, grade: "DC" },
+          { code: "TDB1001", name: "Türk Dili - I", credit: 2, grade: "AA" },
+          { code: "YDB1003", name: "İngilizce - I", credit: 2, grade: "FF" },
+        ],
+      },
+      {
+        name: "Bahar Dönemi",
+        average: 2.05,
+        gno: 2.22,
+        courses: [
+          { code: "IMB1002", name: "İç Mimarlıkta Teknik Resim - II", credit: 4, grade: "CB" },
+          { code: "IMB1004", name: "İç Mimari Proje - II", credit: 6, grade: "CC" },
+          { code: "IMB1006", name: "Mimarlık ve Sanat Tarihi", credit: 3, grade: "BB" },
+          { code: "IMB1008", name: "Yapı Bilgisi", credit: 3, grade: "DD" },
+          { code: "TDB1000", name: "Türk Dili - II", credit: 2, grade: "AA" },
+          { code: "YDB1004", name: "İngilizce - II", credit: 2, grade: "BA" },
+        ],
+      },
+    ],
+  },
+  {
+    year: "2. Sınıf",
+    terms: [
+      {
+        name: "Güz Dönemi",
+        average: 2.75,
+        gno: 2.45,
+        courses: [
+          { code: "IMB2013", name: "İç Mimari Proje - III", credit: 6, grade: "BB" },
+          { code: "IMB2017", name: "Malzeme Bilgisi - I", credit: 3, grade: "BA" },
+          { code: "IMB2025", name: "Bilgisayar Destekli Tasarım - I", credit: 4, grade: "BA" },
+          { code: "IMB2029", name: "Taşıyıcı Sistemler", credit: 2, grade: "CC" },
+          { code: "IMB2031", name: "İç Mekanda Yüzey Anlatımı", credit: 3, grade: "BB" },
+          { code: "IMB2033", name: "Meslek Etiği", credit: 2, grade: "AA" },
+          { code: "IMB2035", name: "İnsan Mekan İlişkisi", credit: 2, grade: "BA" },
+          { code: "IMB2037", name: "Yaratıcı Düşünme", credit: 2, grade: "AA" },
+        ],
+      },
+      {
+        name: "Bahar Dönemi",
+        average: 2.55,
+        gno: 2.51,
+        courses: [
+          { code: "IMB2002", name: "İç Mimari Proje - IV", credit: 6, grade: "BA" },
+          { code: "IMB2004", name: "Bilgisayar Destekli Tasarım - II", credit: 4, grade: "BB" },
+          { code: "IMB2014", name: "Estetik", credit: 2, grade: "AA" },
+          { code: "IMB2020", name: "Detay Bilgisi", credit: 3, grade: "BA" },
+          { code: "IMB2022", name: "Malzeme Bilgisi - II", credit: 3, grade: "BB" },
+          { code: "IMB2024", name: "Meslek Etiği", credit: 2, grade: "AA" },
+          { code: "IMB2026", name: "İnsan Mekan İlişkisi", credit: 2, grade: "BA" },
+          { code: "IMB2028", name: "Yaratıcı Düşünme", credit: 2, grade: "AA" },
+        ],
+      },
+    ],
+  },
+  {
+    year: "3. Sınıf",
+    terms: [
+      {
+        name: "Güz Dönemi",
+        average: 1.45,
+        gno: 2.05,
+        courses: [
+          { code: "IMB3011", name: "Oda Akustiği", credit: 3, grade: "FF" },
+          { code: "IMB3013", name: "İç Mimari Proje - V", credit: 6, grade: "DD" },
+          { code: "IMB3019", name: "Mobilya Tarihi", credit: 4, grade: "CC" },
+          { code: "IMB3023", name: "Isıtma Havalandırma ve Tesisat", credit: 3, grade: "FF" },
+          { code: "IMB3025", name: "Mimari Simülasyon - I", credit: 3, grade: "DD" },
+          { code: "IMB3027", name: "Vitrin Tasarımı", credit: 2, grade: "FF" },
+        ],
+      },
+      {
+        name: "Bahar Dönemi",
+        average: 1.35,
+        gno: 1.90,
+        courses: [
+          { code: "IMB3031", name: "Aydınlatma", credit: 4, grade: "FF" },
+          { code: "IMB3033", name: "Röleve", credit: 6, grade: "DC" },
+          { code: "IMB3035", name: "Mobilya Tasarımı", credit: 4, grade: "FF" },
+          { code: "IMB3037", name: "İç Mimari Proje - VI", credit: 6, grade: "DD" },
+          { code: "IMB3039", name: "İç Mekan Tasarımında Sürdürülebilir Malzemeler", credit: 3, grade: "FF" },
+          { code: "IMB3041", name: "Mimari Simülasyon - II", credit: 3, grade: "FF" },
+          { code: "IMB3043", name: "Sahne Tasarımı", credit: 2, grade: "FF" },
+        ],
+      },
+    ],
+  },
+];
+
 
   const courses = [
     {
@@ -362,7 +228,7 @@ export default function KTUPortal() {
 
   if (!isLoggedIn) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-[#004466] to-[#003355] flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-br text-gray-900 from-[#004466] to-[#003355] flex items-center justify-center p-4">
         <div className="w-full max-w-md">
           <div className="bg-white rounded-3xl p-6 md:p-8 shadow-lg">
             {/* 🔸 KTÜ Logosu */}
@@ -385,7 +251,7 @@ export default function KTUPortal() {
                 value={studentNumber}
                 onChange={(e) => setStudentNumber(e.target.value)}
                 onKeyPress={(e) => e.key === "Enter" && handleLogin(e)}
-                className="w-full p-4 border-2 rounded-full focus:border-[#004466] outline-none"
+                className="w-full p-4 border-2 rounded-full focus:border-[#004466] outline-none text-black placeholder-gray-500"
               />
 
               <div className="relative">
@@ -395,7 +261,7 @@ export default function KTUPortal() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   onKeyPress={(e) => e.key === "Enter" && handleLogin(e)}
-                  className="w-full p-4 border-2 rounded-full focus:border-[#004466] outline-none pr-12"
+                  className="w-full p-4 border-2 rounded-full focus:border-[#004466] outline-none pr-12 text-black placeholder-gray-500"
                 />
                 <button
                   onClick={() => setShowPassword(!showPassword)}
@@ -519,12 +385,12 @@ export default function KTUPortal() {
                   <h1 className="text-2xl font-bold text-[#004466]">
                     Ahsen Nazlı Uydur
                   </h1>
-                  <p className="text-sm text-gray-700">Öğrenci No: 427905</p>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-gray-900">Öğrenci No: 427905</p>
+                  <p className="text-sm text-gray-900">
                     İç Mimarlık Bölümü (I. Öğretim)
                   </p>
-                  <p className="text-sm text-gray-700">Mimarlık Fakültesi</p>
-                  <p className="text-sm text-gray-700">Durum: Aktif Öğrenci</p>
+                  <p className="text-sm text-gray-900">Mimarlık Fakültesi</p>
+                  <p className="text-sm text-gray-900">Durum: Aktif Öğrenci</p>
                 </div>
               </div>
 
@@ -765,7 +631,7 @@ export default function KTUPortal() {
                 {notifications.map((n, i) => (
                   <div key={i} className="border rounded-lg p-3">
                     <h3 className="font-bold text-sm mb-1">{n.title}</h3>
-                    <p className="text-xs text-gray-700 mb-2">{n.message}</p>
+                    <p className="text-xs text-gray-900 mb-2">{n.message}</p>
                     <p className="text-xs text-gray-500">{n.date}</p>
                   </div>
                 ))}
