@@ -561,7 +561,7 @@ export default function KTUPortal() {
                   key={i}
                   className="border-l-4 border-blue-500 pl-3 py-2 mb-3"
                 >
-                  <p className="font-semibold text-sm md:text-base">
+                  <p className="font-semibold text-sm md:text-base text-gray-600">
                     {n.title}
                   </p>
                   <p className="text-xs md:text-sm text-gray-600">
@@ -621,24 +621,24 @@ export default function KTUPortal() {
                 Transkript
               </h2>
               {transcriptData.map((year) => (
-                <div key={year.year} className="mb-8">
-                  <h3 className="text-xl font-semibold mb-2">{year.year}</h3>
+                <div key={year.year} className="mb-8 text-[#000304]">
+                  <h3 className="text-xl font-semibold mb-2 text-[#000304]">{year.year}</h3>
                   {year.terms.map((term) => (
-                    <div key={term.name} className="mb-6">
-                      <h4 className="font-semibold text-black mb-2">
+                    <div key={term.name} className="mb-6 text-[#000304]">
+                      <h4 className="font-semibold text-[#000304] mb-2" >
                         {term.name}
                       </h4>
-                      <table className="w-full text-sm border">
-                        <thead className="bg-gray-400">
+                      <table className="w-full text-[#000304] text-sm border">
+                        <thead className="bg-gray-400 text-[#000304]">
                           <tr>
-                            <th className="border px-2 py-1 text-left">Kod</th>
-                            <th className="border px-2 py-1 text-left">
+                            <th className="border px-2 py-1 text-left text-[#000304]">Kod</th>
+                            <th className="border px-2 py-1 text-left text-[#000304]">
                               Ders Adı
                             </th>
-                            <th className="border px-2 py-1 text-center">
+                            <th className="border px-2 py-1 text-center text-[#000304]">
                               Kredi
                             </th>
-                            <th className="border px-2 py-1 text-center">
+                            <th className="border px-2 py-1 text-center text-[#000304]">
                               Not
                             </th>
                           </tr>
@@ -685,7 +685,7 @@ export default function KTUPortal() {
               <h2 className="text-xl md:text-2xl font-bold text-[#000304] mb-4">
                 Vize Sonuçları
               </h2>
-              <div className="space-y-3">
+              <div className="space-y-3 text-[#000304]">
                 25 kasım 2025 tarihinden itibaren vize sonuçları açıklanacaktır.
               </div>
             </div>
@@ -696,7 +696,7 @@ export default function KTUPortal() {
               <h2 className="text-xl md:text-2xl font-bold text-[#000304] mb-4">
                 Final Sonuçları
               </h2>
-              <div className="space-y-3">
+              <div className="space-y-3 text-[#000304]">
                 10 ocak 2026 tarihinden itibaren Final sonuçları açıklanacaktır.
               </div>
             </div>
@@ -709,19 +709,19 @@ export default function KTUPortal() {
               </h2>
               <div className="bg-blue-50 p-4 rounded-lg space-y-2">
                 <div>
-                  <span className="font-semibold text-sm">Danışman:</span>{" "}
-                  <span className="text-sm">{studentData.advisor}</span>
+                  <span className="font-semibold text-sm text-gray-600">Danışman:</span>{" "}
+                  <span className="text-sm text-gray-600">{studentData.advisor}</span>
                 </div>
                 <div>
-                  <span className="font-semibold text-sm">E-posta:</span>{" "}
-                  <span className="text-sm">edanurfettahoglu@ktu.edu.tr</span>
+                  <span className="font-semibold text-sm text-gray-600">E-posta:</span>{" "}
+                  <span className="text-sm text-gray-600">edanurfettahoglu@ktu.edu.tr</span>
                 </div>
               </div>
             </div>
           )}
 
           {activeMenu === "odemeler" && (
-            <div>
+            <div className="text-gray-600">
               <h2 className="text-xl md:text-2xl font-bold text-[#000304] mb-4">
                 Ödemeler
               </h2>
@@ -743,9 +743,9 @@ export default function KTUPortal() {
                         <p className="font-mono text-xs text-gray-600">
                           {p.no}
                         </p>
-                        <p className="font-semibold text-sm">{p.type}</p>
+                        <p className="font-semibold text-sm text-gray-600">{p.type}</p>
                       </div>
-                      <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">
+                      <span className="bg-yellow-100  text-yellow-800 px-2 py-1 rounded text-xs">
                         {p.status}
                       </span>
                     </div>
